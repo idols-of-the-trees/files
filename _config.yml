@@ -1,0 +1,12 @@
+defaults:
+  - scope:
+      path: "audio"
+    values:
+      audio: true
+
+include: [".htaccess"]
+
+webrick:
+  headers:
+    "Access-Control-Allow-Origin": "*"
+    "Content-Type": "audio/mpeg"
